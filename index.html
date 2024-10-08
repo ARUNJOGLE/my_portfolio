@@ -7,13 +7,16 @@
     <title>ARUN JAISANKAR - PORTFOLIO</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/7867c8b446.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="mynavbar">
                 <!-- <img src="./images/logo.png" alt="logo"> -->
                 <p class="logoText"><span>J</span>ogle.</p>
                 <ul id="sidemenu">
@@ -27,8 +30,26 @@
                 <i class="fa fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headerText">
-                <p>AI/ML Engineer</p>
-                <h1>Hi, I'm <span>ARUN</span><br><span>JAISANKAR</span> from &#127470;&#127475;</h1>
+                <p>Hi, I'm</p>
+                <h1> <span>ARUN</span><br><span>JAISANKAR</span><br> from <span class="letter-orange">In</span><span
+                        class="letter-blue">d</span><span class="letter-green">ia</span></h1>
+            </div>
+            <h4 class="wordCarousel">
+                <!-- <span>sample text here</span> -->
+                <div>
+                    <!-- Use classes 2,3,4, or 5 to match the number of words -->
+                    <ul class="flip5">
+                        <li>UI/UX Design</li>
+                        <li>Web Development</li>
+                        <li>Machine Learning</li>
+                        <li>Statistics</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+            </h4>
+            <div class="scroll">
+                <div class="toTop"><a href="#header"><i class="fa fa-chevron-up"></i></a></div>
+                <div class="toDown"><a href="#contact"><i class="fa fa-chevron-down"></i></a></div>
             </div>
         </div>
     </div>
@@ -41,10 +62,14 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse eos iste tempora similique fugit
-                        alias sunt illo. Facere provident tempora impedit officiis cum, omnis vitae sequi obcaecati
-                        labore facilis qui iste. Tempora nobis, ipsum veniam atque ab consequatur temporibus minima eos
-                        recusandae beatae est, accusamus in maxime quia, laboriosam quis.</p>
+                    <p>Hi dudes!,
+
+                        I&apos;m a tech enthusiast with expertise in AI, machine learning, web development, and app
+                        creation.
+                        I enjoy turning ideas into innovative solutions and love collaborating to solve problems.
+                        I&apos;m
+                        always eager to learn and share knowledge. Feel free to connect if you're interested in exciting
+                        projects!</p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -83,25 +108,27 @@
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa fa-car lg"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore eos maiores optio,
-                        veritatis consectetur ullam quod magnam fugit veniam.</p>
-                    <a href=" #">Learn more</a>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h2>Web Development</h2>
+                    <p>Developed complex, responsive web applications using HTML, CSS, JavaScript, and integrated
+                        features like data generation, statistical calculations, and PDF reporting.</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa fa-car"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore eos maiores optio,
-                        veritatis consectetur ullam quod magnam fugit veniam.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <h2>Statistics</h2>
+                    <p>Applied statistical measures in web applications for data analysis and customer insights,
+                        ensuring real-time data processing and visualization.</p>
+                    <a href="https://unece.org/statistics/publications/machine-learning-official-statistics">Learn
+                        more</a>
                 </div>
                 <div>
-                    <i class="fa fa-car"></i>
-                    <h2>UI Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem inventore eos maiores optio,
-                        veritatis consectetur ullam quod magnam fugit veniam.</p>
-                    <a href="#">Learn more</a>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Built and deployed machine learning models for tasks like phishing URL detection and feature
+                        selection, focusing on real-time predictions and offline functionality.</p>
+                    <a href="https://machinelearning101.readthedocs.io/en/latest/_pages/01_introduction.html">Learn
+                        more</a>
                 </div>
             </div>
         </div>
@@ -113,27 +140,29 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./images/work-1.png">
+                    <img src="./images/bg-clvpulse.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sit.</p>
-                        <a href="#"><i class="fa fa-external-link"></i></a>
+                        <h3>CLV Pulse</h3>
+                        <p>A Dynamic Customer Lifetime Value Predictor using Machine Learning Algorithms</p>
+                        <a href="https://clvpulse.netlify.app/" target="_blank"><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./images/work-2.png">
+                    <img src="./images/bg-krctscience.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sit.</p>
-                        <a href="#"><i class="fa fa-external-link"></i></a>
+                        <h3>KRCT Science</h3>
+                        <p>Developed a comprehensive web portal for KRCT college for accessing scientific knowledge</p>
+                        <a href="https://krctscience.netlify.app/" target="_blank"><i
+                                class="fa fa-external-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./images/work-3.png">
+                    <img src="./images/bg-mlcoating.png">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sit.</p>
-                        <a href="#"><i class="fa fa-external-link"></i></a>
+                        <h3>Machine Learning Based Material Coating</h3>
+                        <p>Developed a predictive model utilizing machine learning techniques to determine optimal
+                            coating parameters for materials</p>
+                        <a href="#" target="_blank"><i class="fa fa-external-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -146,18 +175,26 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa fa-paper-plane"></i>arunjothi2004@gmail.com</p>
-                    <p><i class="fa fa-phone"></i> +91 63824 37327</p>
+                    <h1 class="sub-title"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        I'm here.</h1>
+                    <p><i class="fa fa-paper-plane"></i><a class="mailLink"
+                            href="mailto:arunjothi2004@gmail.com">arunjothi2004@gmail.com</a></p>
+                    <p><i class="fa fa-phone"></i><a class="phoneLink" href="tel:+916382437327">+91 63824 37327</a></p>
                     <div class="social-icons">
                         <a href="https://github.com/ARUNJOGLE"><i class='fa fa-github'></i></a>
                         <a href="https://www.linkedin.com/in/arunjaisankar/"><i class='fa fa-linkedin'></i></a>
                         <a href="https://www.instagram.com/arun.jogle/"><i class='fa fa-instagram'></i></a>
                         <a href="https://www.facebook.com/arun.jogle.5/"><i class='fa fa-facebook'></i></a>
                         <a href="https://www.youtube.com/@arunjaisankar"><i class='fa fa-youtube'></i></a>
+                        <a href="tel:+916382437327"><i class='fa fa-whatsapp'></i></a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1TiCKJjxFJK5Hnl8Ud8KRpmqz0NmHnhPd/view?usp=sharing"
-                        download class="btn btn-2">Download CV</a>
+                    <div class="downloadBox">
+                        <a href="https://drive.google.com/file/d/1TiCKJjxFJK5Hnl8Ud8KRpmqz0NmHnhPd/view?usp=sharing"
+                            download class="btn btn-2">Download CV</a>
+
+                        <a href="./digitalCv.html" target="_blank" class="btn btn-2 btn-digital">Want a Digital CV?</a>
+                    </div>
+
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -223,6 +260,15 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <script>
+        document.onclick = function (e) {
+            if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
+                menu_icon_box.classList.remove("active");
+                box.classList.remove("active_box");
+            }
+        }
     </script>
 
 </body>

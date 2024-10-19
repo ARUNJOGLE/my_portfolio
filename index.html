@@ -25,9 +25,9 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa fa-times" onclick="closemenu()"></i>
+                    <i id="menu-btn" class="fa fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa fa-bars" onclick="openmenu()"></i>
+                <i id="menu-btn" class="fa fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headerText">
                 <p>Hi, I'm</p>
@@ -47,12 +47,16 @@
                     </ul>
                 </div>
             </h4>
-            <div class="scroll">
-                <div class="toTop"><a href="#header"><i class="fa fa-chevron-up"></i></a></div>
-                <div class="toDown"><a href="#contact"><i class="fa fa-chevron-down"></i></a></div>
-            </div>
         </div>
     </div>
+    <!-- fixed menu navigation
+    <div class="scroll">
+        <div class="toTop"><a href="#header"><i class="fa fa-chevron-up"></i></a></div>
+
+        <div class="burgerMenu"><i class="fa fa-bars" onclick="openmenu()"></i></div>
+
+        <div class="toDown"><a href="#contact"><i class="fa fa-chevron-down"></i></a></div>
+    </div> -->
     <!-- ----------------------------about---------------------------- -->
     <div id="about">
         <div class="container">
@@ -73,28 +77,42 @@
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experiance')">Experience</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-                            <li><span>Networking</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Design and build responsive, user-friendly websites and
+                                web applications. <br><mark>Tools: VS Code, Git</mark></li>
+                            <li><span>AI & Machine Learning</span><br>Develop and deploy machine learning models to
+                                solve complex real-world problems.<br><mark>Tools: Jupyter Notebook, TensorFlow</mark>
+                            </li>
+                            <li><span>Java Programming</span><br>Write efficient and scalable code to develop software
+                                solutions and applications.<br> <mark>Tools: IntelliJ IDEA, Maven</mark></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experiance">
+                    <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>experiance tab</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-                            <li><span>Networking</span><br>Designing Web/App interfaces</li>
+                            <li><span>Fresher</span><br>----------------</li>
+                            <li><span>Internship (2024 - Present)</span><br>Currently working on an Internship in the
+                                field of <b> Artificial
+                                    Intelligence & Data Science</b> by the <a href="https://edutantr.graphy.com/"
+                                    class="linkUnique">EduTantr</a>
+                                Platform</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>eduaction tab</span><br>Designing Web/App interfaces</li>
-                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-                            <li><span>Networking</span><br>Designing Web/App interfaces</li>
+                            <li><span><mark>UG Degree</mark><br>K Ramakrishnan College of Technology</span><br>B.Tech
+                                Artificial
+                                Intelligence &
+                                Machine Learning
+                            </li>
+                            <li><span><mark>Higher Secondary Education</mark><br>Brindhavan Higher Secondary
+                                    School</span><br>Computer
+                                Science - 91.20 %</li>
+                            <li><span><mark>Secondary Education</mark><br> Govt High School</span><br>SSLC -86.6 %
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -260,15 +278,6 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
-    </script>
-
-    <script>
-        document.onclick = function (e) {
-            if (!menu_icon_box.contains(e.target) && !box.contains(e.target)) {
-                menu_icon_box.classList.remove("active");
-                box.classList.remove("active_box");
-            }
-        }
     </script>
 
 </body>

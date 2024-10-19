@@ -6,6 +6,7 @@
 
     --primary-color: #ffa600;
     --light-primary-color: #fdd212;
+    --unique-primary-color: #ffffff;
     /*to use this :  var(--primary-color)*/
 
 }
@@ -442,7 +443,10 @@ nav .fa {
 
     nav .fa {
         display: block;
-        font-size: 25px;
+        font-size: 40px;
+        position: fixed;
+        right: 0;
+        color: #ffffff6e;
     }
 
     nav ul {
@@ -516,17 +520,31 @@ nav .fa {
     color: var(--primary-color);
 }
 
+.linkUnique {
+    text-decoration: underline;
+    color: var(--unique-primary-color);
+}
 
 /* --------------sticky nav bar ----------------------- */
 
 .scroll {
+    top: 50%;
+    position: sticky;
+    margin-left: 20px;
+}
+
+
+
+
+/* .scroll {
     display: flex;
     top: 50%;
     position: absolute;
 }
 
 .toTop,
-.toDown {
+.toDown,
+.burgerMenu {
     position: fixed;
     left: 0;
     display: flex;
@@ -542,19 +560,16 @@ nav .fa {
 
 }
 
-.toTop i {
-    margin-bottom: 100px;
-}
-
 .toTop i,
-.toDown i {
+.toDown i,
+.burgerMenu i {
     font-weight: 200;
     font-size: 20px;
     text-shadow: 0 0 5px #000000;
     line-height: 2px;
     padding: 0 40px;
     color: var(--primary-color);
-}
+} */
 
 .mailLink,
 .phoneLink {
@@ -569,7 +584,9 @@ nav .fa {
 }
 
 
-
+mark {
+    background-color: var(--unique-primary-color);
+}
 
 
 
@@ -606,7 +623,7 @@ nav .fa {
         li {
             font-family: 'Poppins', sans-serif;
             color: #eee;
-            font-weight: 700;
+            /* font-weight: 700; */
             padding: 0 0px;
             height: 45px;
             margin-bottom: 45px;
